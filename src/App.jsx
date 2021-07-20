@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <h1>Wild Music</h1>
     </div>
+
   );
 }
 
