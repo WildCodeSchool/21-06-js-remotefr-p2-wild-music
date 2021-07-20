@@ -7,15 +7,16 @@ function ListeningList() {
     const [playlists, setPlaylists] = useState([]);
     useEffect(() => {
         axios
-        .get("https://openwhyd.org/adrien/playlist/10?format=json")
+        .get("https://openwhyd.org/adrien/playlists?format=json")
         .then((res) => res.data)
         .then((data) => setPlaylists(data))
     }, [])
+    console.log(playlists)
     return (
         <div className="PlayList">
            {playlists
-           .map((playlist) => 
-                <div key={playlist.id}>
+           .map((playlist, index) => 
+                <div key={playlist.index}>
                     <Listening playlist={playlist} />
                 </div>)} 
         </div>
