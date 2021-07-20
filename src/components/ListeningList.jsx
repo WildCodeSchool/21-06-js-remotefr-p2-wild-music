@@ -7,7 +7,7 @@ function ListeningList() {
     const [playlists, setPlaylists] = useState([]);
     useEffect(() => {
         axios
-        .get("https://openwhyd.org/adrien/playlist/")
+        .get("https://openwhyd.org/adrien/playlist/10?format=json")
         .then((res) => res.data)
         .then((data) => setPlaylists(data))
     }, [])
