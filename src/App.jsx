@@ -1,9 +1,19 @@
+import NavBar from './components/nav/NavBar';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Listener from './pages/Listener';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Wild Music</h1>
+      <NavBar />
+			<Switch>
+				<Route exact path="/" components={Home}/>
+				<Route path="/playlist-songs" components={Listener}/>
+				<Route path="/contact"components={Contact}/>
+			</Switch>
     </div>
   );
 }
