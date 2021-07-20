@@ -7,7 +7,9 @@ function ListeningList() {
     const [playlists, setPlaylists] = useState([]);
     useEffect(() => {
         axios
-        .get("https://openwhyd.org/adrien/playlists?format=json")
+        .get("https://cors-anywhere.herokuapp.com/https://openwhyd.org/adrien/playlists?format=json")
+        
+        
         .then((res) => res.data)
         .then((data) => setPlaylists(data))
     }, [])
