@@ -6,8 +6,12 @@ function Artist({artist}) {
     return (
         <div className= "Artist">
             <article className= "artist-card">
-                <img src={artist.image} alt={artist.name} />
-                <h2 className= "artiste-name">{artist.name}</h2>
+                <div className= "img-container">
+                <img className= "artist-img" src={artist.image} alt={artist.name} />
+                </div>
+                <div className= "artist-card-content">
+                    <h2>{artist.name}</h2>
+                </div>
             </article>
         </div>
     )

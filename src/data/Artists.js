@@ -2,13 +2,13 @@ const artists = [
     {
        id: 0,
        name: "Angèle",
-       image: "https://www.moka-mag.com/media/cache/person_detail_main_picture/2018/12/5267-angele.jpg",
+       image: "https://media.virginradio.fr/article-4546092-ajust_1020-f8/media.jpg",
     },
 
     {   
         id: 1,
         name: "Khalid",
-        image: "https://eklectikmedia.ca/wp-content/uploads/2019/08/khalid1.jpg",
+        image: "https://i.ytimg.com/vi/Xhjyb0D6-Wg/maxresdefault.jpg",
     },
 
     {   
