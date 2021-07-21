@@ -1,7 +1,6 @@
 import React from 'react'
 
-
-function Listener() {
+function Listening() {
 	return (
 		<div>
 			
@@ -9,4 +8,5 @@ function Listener() {
 	)
 }
 
-export default Listener
+export default Listening
+

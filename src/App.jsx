@@ -1,7 +1,7 @@
 import NavBar from './components/nav/NavBar';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Listener from './pages/Listener';
+import Listener from './pages/Listening';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
