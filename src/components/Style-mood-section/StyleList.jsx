@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import PlaylistCard from './PlaylistCard';
 import './StyleList.css'
 let styles = require('../../data/styles')

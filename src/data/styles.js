@@ -7,11 +7,12 @@ const styles = [{
 },
 {
     id:1,
-    name: 'Work',
-    img : 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
-    quote:"Either you run the day or the day runs you",
-    quoteBy : "Jim Rohn"
+    name: 'Pop',
+    img : 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80',
+    quote : "Pop music will never be low brow",
+    quoteBy : "Lady Gaga"
 },
+
 {
     id:2,
     name: 'Hip-Hop/Rap',
@@ -28,10 +29,10 @@ const styles = [{
 },
 {
     id:4,
-    name: 'Pop',
-    img : 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80',
-    quote : "Pop music will never be low brow",
-    quoteBy : "Lady Gaga"
+    name: 'Work',
+    img : 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+    quote:"Either you run the day or the day runs you",
+    quoteBy : "Jim Rohn"
 },
 {
     id:5,
@@ -42,17 +43,17 @@ const styles = [{
 },
 {
     id:6,
-    name: 'Techno',
-    img : 'https://images.unsplash.com/photo-1594623930572-300a3011d9ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
-    quote:"Techno is everything you haven't imagined yet",
-    quoteBy : "Jeff Mills"
-},
-{
-    id:7,
     name: 'Sport',
     img : 'https://images.unsplash.com/photo-1557330359-ffb0deed6163?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
     quote: "If something stands between you and your success, move it. Never be denied",
     quoteBy : "Dwayne 'The Rock' Johnson"
+},
+{
+    id:7,
+    name: 'Techno',
+    img : 'https://images.unsplash.com/photo-1594623930572-300a3011d9ae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+    quote:"Techno is everything you haven't imagined yet",
+    quoteBy : "Jeff Mills"
 }]
 
 module.exports = styles;
