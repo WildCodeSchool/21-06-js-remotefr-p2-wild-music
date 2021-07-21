@@ -1,0 +1,32 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+.Footer {
+    height: 10vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100vh;
+}
+
+.footer-columns-container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: auto;
+    margin-left: 3%;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 6vh;
+}
+
+.social-links a:hover {
+    color: rgb(185, 122, 4);
+}
+
