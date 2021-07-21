@@ -7,6 +7,7 @@ function App() {
       <h1>Wild Music</h1>
       <Footer />
     </div>
+
   );
 }
 
