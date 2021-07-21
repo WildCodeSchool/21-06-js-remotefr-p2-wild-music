@@ -1,0 +1,39 @@
+.PlaylistCard {
+    display: flex;
+    flex-direction: column;
+    margin : 40px;
+}
+
+.playlist-container{
+    display : flex;
+    flex-direction: column;
+    border : 1px solid red;
+    width : 250px;
+    height: 200px;
+    position: relative;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.card-content h2{
+    color: white;
+    margin-bottom: 10px;
+}
+.quote{
+    color: white;
+}
+
+.playlist-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
