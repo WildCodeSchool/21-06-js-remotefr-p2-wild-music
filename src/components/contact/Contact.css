@@ -1,0 +1,64 @@
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.about-us {
+display: flex;
+flex-direction: column;
+margin-bottom: 5%;
+font-size: 4vh;
+}
+
+.text {
+    margin: 4%;
+    font-size: 2vh;
+}
+
+.contact-form {
+    font-size: 4vh;
+    margin-bottom: 4%;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 1%; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 2vh; 
+    margin-bottom: 2vh; 
+    display: flex;
+}
+
+
+input {
+   
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+
+  input[type=submit]:hover {
+    background-color: var(--main-color);
+  }
+
+  .container {
+    padding: 2%;
+  }
+  
+
+.social-links2 {
+    font-size: 5vh;
+    margin-top: 2%;
+}
+
+.social-links2 a:hover {
+    color: grey;
+}

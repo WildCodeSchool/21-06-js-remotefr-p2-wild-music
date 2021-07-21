@@ -1,14 +1,9 @@
-* {
- margin: 0;
- padding: 0;
-}
-
 .Footer {
     height: 10vh;
-    background-color: orange;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
-    margin-top: 100vh;
+    margin-top: 84vh;
 }
 
 .footer-columns-container {
@@ -27,6 +22,9 @@
 }
 
 .social-links a:hover {
-    color: rgb(185, 122, 4);
+    color: rgb(124, 84, 8);
 }
 
+@media (max-width: 812px) {
+   
+  }
