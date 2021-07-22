@@ -17,8 +17,8 @@ function ListeningList() {
     return (
         <div className="PlayList">
            {playlists
-           .map((playlist, index) => 
-                <div key={playlist.index}>
+           .map((playlist) => 
+                <div key={playlist.id}>
                     <Listening playlist={playlist} />
                 </div>)} 
         </div>
