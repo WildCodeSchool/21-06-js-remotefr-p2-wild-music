@@ -1,0 +1,93 @@
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: center;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-us {
+text-align: center;
+display: flex;
+flex-direction: column;
+margin-bottom: 10px;
+font-size: 3vh;
+}
+
+.text {
+    margin: 15px;
+    font-size: 1.5vh;
+}
+
+.contact-form {
+    font-size: 3vh;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 1%; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+#name, #country, #email, #request {
+    background-color: rgb(207, 202, 202);
+}
+
+#request {
+padding: 4%;
+color: black;
+display: flex;
+text-align: flex-start;
+}
+
+input {
+    padding: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+
+  input[type=submit]:hover {
+    background-color: var(--main-color);
+  }
+
+  .container {
+    padding: 2%;
+  }
+  
+
+.social-links2 {
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    margin-bottom: 20px;
+}
+
+.social-links2 a:hover {
+    color: grey;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .Contact {
+       width: 80%;
+    }
+        
+    }
+
+    @media (min-width: 768px) and (max-width: 1112px) {
+
+        .Contact {
+           width: 80%;
+        }
+            
+        }
