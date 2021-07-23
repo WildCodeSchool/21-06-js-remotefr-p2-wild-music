@@ -11,13 +11,12 @@ function Contact() {
             </div>
             <div className="contact-form">Contact Form</div>
             <div class="container">
-  <form action="action_page.php">
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name.."></input>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="For_example@hotmail.com..."></input>
 
     <label for="country">Country</label>
     <select id="country" name="country">
@@ -26,14 +25,13 @@ function Contact() {
       <option value="usa">USA</option>
     </select>
 
-    <label for="email">Email</label>
-    <textarea id="email" name="email" placeholder="For_example@hotmail.com..."></textarea>
+    <label for="Request">Request</label>
+    <textarea id="request" name="request" placeholder="Text..."></textarea>
 
-    <input className= "submit" type="submit" value="Submit"></input>
+    <input className= "submit" type="submit" value="Submit" onClick={()=> alert("You've just submitted your Contact form !")}></input>
 
-  </form>
 </div>
-            <div className="social-links2" >
+ <div className="social-links2" >
     <a href ><FaFacebook /></a>
     <a href><FaTwitterSquare /></a>
     <a href><FaInstagram /></a>
