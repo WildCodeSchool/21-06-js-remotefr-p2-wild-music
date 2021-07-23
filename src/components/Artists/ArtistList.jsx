@@ -6,6 +6,7 @@ let artists = require('../../data/Artists');
 function ArtistList() {
     return (
         <div className= "ArtistList">
+            <h2>Artistes Populaires</h2>
             <div className= "artist-container">
                 {artists
                 .map((artist) => (
