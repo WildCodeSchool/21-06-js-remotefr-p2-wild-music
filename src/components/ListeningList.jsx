@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import Listening from './Listening'
+import './ListeningList.css';
 
 
 function ListeningList() {

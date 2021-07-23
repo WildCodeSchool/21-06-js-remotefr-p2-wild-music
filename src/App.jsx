@@ -1,11 +1,17 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ListeningList from './components/ListeningList';
+import ListeningDetails from './components/ListeningDetails';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Wild Music</h1>
-      <ListeningList />
+      <Router>
+        <Switch>
+         <Route exact path ='/' component={ListeningList} />
+         <Route path ='/:id' component={ListeningDetails} />
+        </Switch>
+      </Router>
     </div>
 
   );
