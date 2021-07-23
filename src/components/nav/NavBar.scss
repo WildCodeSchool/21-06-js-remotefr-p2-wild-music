@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	height:7vh;
+	background-color: blue;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+}
+
+#title {
+	font-size: 40px;
+	font-weight: 800;
+	margin: auto;
+	color: white;
+	position: relative;
+	text-decoration: none;
+
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 0;
+		height: 2px;
+		background-color: white;
+		transition: width 0.35s ease-out;
+	}
+	
+	&:hover::before {
+		width: 100%;
+		left: 0;
+		right: auto;
+	}
+}
+
+.icon-nav {
+	display: flex;
+	height: 100%;
+	width: 83.55px;
+}
+
+.icon {
+	color: black;
+	background-color: white;
+	border-radius: 50%;
+	height: 28px;
+	width: 28px;
+	transition: all 0.5s ease;
+
+	&:hover {
+		color: white;
+		background-color: black;
+	}
+}
+
+.icon-link {
+	margin: auto;
+}
