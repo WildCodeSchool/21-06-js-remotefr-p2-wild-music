@@ -1,0 +1,23 @@
+.Artist {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.artist-img {
+    width: auto;
+    height: 100%;
+    margin-left: -55px;
+}
