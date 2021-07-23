@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Listener from './pages/Listening';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
+
+import ArtistList from './components/Artists/ArtistList';
 import StyleList from './components/Style-mood-section/StyleList';
 
 

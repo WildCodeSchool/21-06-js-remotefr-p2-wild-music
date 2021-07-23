@@ -1,0 +1,11 @@
+.ArtistList > h2 {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+.artist-container {
+    display: flex;
+    justify-content: space-between;
+}
