@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './PlaylistCard.css'
 
 function PlaylistCard({style}) {

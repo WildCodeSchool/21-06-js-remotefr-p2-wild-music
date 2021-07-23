@@ -10,11 +10,11 @@
 }
 
 .about-us {
-text-align: center;
-display: flex;
-flex-direction: column;
-margin-bottom: 10px;
-font-size: 3vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 3vh;
 }
 
 .text {
@@ -43,10 +43,10 @@ input[type=text], select, textarea {
 }
 
 #request {
-padding: 4%;
-color: black;
-display: flex;
-text-align: flex-start;
+    padding: 4%;
+    color: black;
+    display: flex;
+    text-align: flex-start;
 }
 
 input {
@@ -54,15 +54,15 @@ input {
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid #ccc;
-  }
+}
 
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: var(--main-color);
-  }
+}
 
-  .container {
+.container {
     padding: 2%;
-  }
+}
   
 
 .social-links2 {
@@ -77,17 +77,15 @@ input {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-
+    
     .Contact {
        width: 80%;
     }
-        
+ }
+
+ @media (min-width: 768px) and (max-width: 1112px) {
+
+    .Contact {
+        width: 80%;
     }
-
-    @media (min-width: 768px) and (max-width: 1112px) {
-
-        .Contact {
-           width: 80%;
-        }
-            
-        }
+ }

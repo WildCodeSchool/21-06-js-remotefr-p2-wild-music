@@ -1,7 +1,6 @@
 import React from 'react';
 import './Artist.css';
 
-
 function Artist({artist}) {
     return (
         <div className= "Artist">
