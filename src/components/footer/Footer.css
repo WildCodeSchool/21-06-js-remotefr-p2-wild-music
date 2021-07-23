@@ -9,7 +9,6 @@
 .footer-columns-container {
     width: 100%;
     margin-top: auto;
-   
 }
 
 .social-links {
@@ -18,7 +17,6 @@
     font-size: 5vh;
     margin-bottom: 10px;
     margin-right: 10px;
-    
 }
 
 .social-links a:hover {
@@ -32,15 +30,12 @@
         justify-content: center;
         margin-left: 20px;
     }
-   
-  }
+ }
 
-  @media (min-width: 768px) and (max-width: 1112px) {
+ @media (min-width: 768px) and (max-width: 1112px) {
 
-    .social-links{
+     .social-links{
         display: flex;
         justify-content: center;
-        
     }
-  }
-
+ }

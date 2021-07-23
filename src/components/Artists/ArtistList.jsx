@@ -13,11 +13,8 @@ function ArtistList() {
                     <div key= {artist.id}>
                         <Artist artist={artist} />
                     </div>
-                ))
-                }
-
+                ))}
             </div>
-            
         </div>
     )
 }

@@ -4,7 +4,7 @@
     margin : 40px;
 }
 
-.playlist-container{
+.playlist-container {
     display : flex;
     flex-direction: column;
     width : 280px;
@@ -14,7 +14,7 @@
     cursor:default;
 }
 
-.card-content{
+.card-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,18 +25,18 @@
     position: absolute;
 }
 
-.playlistTitle{
-
+.playlistTitle {
     color: white;
     margin-top: 70px;
 }
-.quote{
+
+.quote {
     margin-right: auto;
     margin-left: auto;
     visibility: hidden;
 }
 
-.playerBtn{
+.playerBtn {
     margin-top:auto;
     margin-bottom: auto;
     cursor: pointer;
@@ -49,17 +49,15 @@
     opacity: 1;
     border-radius: 5px;
     box-shadow:0 0 0px rgba(0, 0, 0, 0.70);
-    
 }
 
-.playlist-container:hover .styleImg{
+.playlist-container:hover .styleImg {
     box-shadow:0 0 10px rgba(0, 0, 0, 1);
     opacity: 0.8 ;
     transition: .2s ease;
-    
 }
 
-.playlist-container:hover .playlistTitle{
+.playlist-container:hover .playlistTitle {
     transition: 1s ease;
     margin-top: 0px;
     color: black;
