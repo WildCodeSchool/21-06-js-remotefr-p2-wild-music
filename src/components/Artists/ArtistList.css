@@ -8,3 +8,12 @@
     display: flex;
     justify-content: space-between;
 }
+
+.slide {
+    padding-left: 19vw;
+    padding-right: 19vw;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+  }

@@ -10,8 +10,8 @@
 
 .img-container {
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -19,5 +19,6 @@
 .artist-img {
     width: auto;
     height: 100%;
-    margin-left: -55px;
+    /* margin-left: -55px; */
+    margin-left: -30px;
 }
