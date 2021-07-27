@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 :root {
-    --main-color: #FFB460;
-    --main-background: linear-gradient(to bottom, #95d7f2, #badffa, #d8e8fd, #eff2fe, #ffffff);
+    
+    --bg-NavBar: linear-gradient(to bottom, #6dc9ee, #78cdef, #82d0f0, #8cd4f1, #95d7f2);
+    --bg-stylelist: linear-gradient(to bottom, #95d7f2, #badffa, #d8e8fd, #eff2fe, #ffffff);
  }
 
 * {
