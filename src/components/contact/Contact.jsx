@@ -1,13 +1,12 @@
 import './Contact.css';
 import React from 'react';
-import { FaFacebook, FaTwitterSquare, FaInstagram } from 'react-icons/fa';
 
 function Contact() {
     return (
         <div className="Contact">
-            <div className="about-us">About Us
+           {/* <div className="about-us">About Us
             <span className="text">Text</span>
-            </div>
+    </div> */}
             <div className="contact-form">Contact Form</div>
             <div class="container">
 
@@ -30,11 +29,6 @@ function Contact() {
                 <input className= "submit" type="submit" value="Submit" onClick={()=> alert("You've just submitted your Contact form !")}></input>
 
              </div>
-            <div className="social-links2" >
-            <a href ><FaFacebook /></a>
-            <a href><FaTwitterSquare /></a>
-            <a href><FaInstagram /></a>
-            </div>
         </div>
     )
 }
