@@ -4,23 +4,26 @@
     display: flex;
     flex-direction: column;
     bottom: 0;
+    margin-top: 10px;
 }
 
 .footer-columns-container {
     width: 100%;
     margin-top: auto;
+    background-image: linear-gradient(to right top, #ffc584, #ffca8e, #fece98, #fed3a2, #fdd7ac, #ffd9ba, #ffdcc8, #ffe0d5, #ffe6e7, #ffeff5, #fcf7fd, #ffffff);
 }
 
 .social-links {
     display: flex;
     justify-content: flex-end;
     font-size: 5vh;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+    margin-top: 10px;
     margin-right: 10px;
 }
 
 .social-links a:hover {
-    color: rgb(124, 84, 8);
+    color: grey;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
