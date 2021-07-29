@@ -13,7 +13,7 @@ function ArtistList() {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "10vw",
+        centerPadding: "11vw",
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 500,
