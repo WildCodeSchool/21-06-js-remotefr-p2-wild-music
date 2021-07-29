@@ -1,27 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function ListeningDetails(props) {
     const [playlistDetails, setPlaylistDetails] = useState();
+    const [playlistImages, setPlaylistImages] = useState();
     const playlistId = props.match.params.id;
-    const policy = "https://cors-anywhere.herokuapp.com/";
-    const url = (`https://openwhyd.org/adrien/playlist/${playlistId}?format=json`);
-    const url2 = (`https://pokeapi.co/api/v2/pokemon/${playlistId}`);
-    
+    const url = (`http://localhost:8000/musics/${playlistId}`);
     
     useEffect(() => {
         axios
-        .get(policy+url)
+        .get(url)
         .then((res) => {
-        setPlaylistDetails(res.data.name)}); 
+        setPlaylistDetails(res.data.id)
+        setPlaylistImages(res.data.img)}); 
     }, [playlistId])
-    console.log(playlistId);
-    console.log(playlistDetails);
-    console.log(url)
 
     return (
         <div>
-           <span>{playlistDetails}</span> 
+           <span>{playlistDetails}</span>
+           <img src={`https://openwhyd.org${playlistImages}`} alt="playlist" />
+           <Link to={{pathname: '/'}}>Home</Link>
         </div>
     )
 }
