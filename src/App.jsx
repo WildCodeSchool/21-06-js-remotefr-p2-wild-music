@@ -1,4 +1,4 @@
-import { BrowserRouter as Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import NavBar from './components/nav/NavBar';
@@ -12,12 +12,14 @@ function App() {
   return (
     <div className="App">     
       <NavBar />
+      <Router>
 			<Switch>
 				<Route exact path="/" component={Home}/>
 				<Route path="/playlist-songs" component={Listener}/>
 				<Route path="/contact" component={Contact}/>
         <Route path ='/:id' component={ListeningDetails} />
-			</Switch> 
+			</Switch>
+      </Router> 
       <Footer />
     </div>
   );
