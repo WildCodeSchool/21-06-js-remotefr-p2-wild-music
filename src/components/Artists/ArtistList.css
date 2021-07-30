@@ -4,8 +4,17 @@
     padding: 50px;
 }
 
-
 .artist-container {
     display: flex;
     justify-content: space-between;
 }
+
+.slide {
+    padding-left: 13vw;
+    padding-right: 13vw;
+
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+  }

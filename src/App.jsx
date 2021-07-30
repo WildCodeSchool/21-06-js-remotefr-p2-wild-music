@@ -1,9 +1,12 @@
-import Footer from './components/footer/Footer';
-import Contact from './components/contact/Contact';
-import NavBar from './components/nav/NavBar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
+import NavBar from './components/nav/NavBar';
 import Listener from './pages/Listening';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Footer from './components/footer/Footer';
+// import ListeningList from './pages/ListeningList';
+import ListeningDetails from './components/ListeningDetails';
 import './App.css';
 
 function App() {
@@ -12,11 +15,12 @@ function App() {
       <NavBar />
       <Router>
 			<Switch>
-				<Route path="/" components={Home}/>
-				<Route path="/playlist-songs" components={Listener}/>
-				<Route path="/contact"components={Contact}/>
-			</Switch> 
-      </Router>
+				<Route exact path="/" component={Home}/>
+				<Route path="/playlist-songs" component={Listener}/>
+				<Route path="/contact" component={Contact}/>
+        <Route path ='/:id' component={ListeningDetails} />
+			</Switch>
+      </Router> 
       <Footer />
       
     </div>
