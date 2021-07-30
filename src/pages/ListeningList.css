@@ -1,0 +1,5 @@
+.PlayList{
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--main-background);
+}
