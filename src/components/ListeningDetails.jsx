@@ -6,11 +6,10 @@ function ListeningDetails(props) {
     const [playlistDetails, setPlaylistDetails] = useState();
     const [playlistImages, setPlaylistImages] = useState();
     const playlistId = props.match.params.id;
-    const url = (`http://localhost:8000/musics/${playlistId}`);
-    
+ 
     useEffect(() => {
         axios
-        .get(url)
+        .get(`http://localhost:8000/musics/${playlistId}`)
         .then((res) => {
         setPlaylistDetails(res.data.id)
         setPlaylistImages(res.data.img)}); 
