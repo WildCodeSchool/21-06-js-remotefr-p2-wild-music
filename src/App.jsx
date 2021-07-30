@@ -3,23 +3,22 @@ import Contact from './components/contact/Contact';
 import NavBar from './components/nav/NavBar';
 import Home from './pages/Home';
 import Listener from './pages/Listening';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-
-import ArtistList from './components/Artists/ArtistList';
-import StyleList from './components/Style-mood-section/StyleList';
-
 
 function App() {
   return (
     <div className="App">     
       <NavBar />
+      <Router>
 			<Switch>
-				<Route exact path="/" components={Home}/>
+				<Route path="/" components={Home}/>
 				<Route path="/playlist-songs" components={Listener}/>
 				<Route path="/contact"components={Contact}/>
 			</Switch> 
+      </Router>
       <Footer />
+      
     </div>
   );
 }
