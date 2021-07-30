@@ -4,9 +4,6 @@ import React from 'react';
 function Contact() {
     return (
         <div className="Contact">
-           {/* <div className="about-us">About Us
-            <span className="text">Text</span>
-    </div> */}
             <div className="contact-form">Contact Form</div>
             <div class="container">
 
