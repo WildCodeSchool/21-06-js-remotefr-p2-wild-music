@@ -31,7 +31,7 @@ function Contact() {
 
              </div>
             <div className="social-links2" >
-            <a href ><FaFacebook /></a>
+            <a href><FaFacebook /></a>
             <a href><FaTwitterSquare /></a>
             <a href><FaInstagram /></a>
             </div>
