@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import ListeningList from './components/ListeningList';
+import ListeningList from './pages/ListeningList';
 import ListeningDetails from './components/ListeningDetails';
 import './App.css';
 
