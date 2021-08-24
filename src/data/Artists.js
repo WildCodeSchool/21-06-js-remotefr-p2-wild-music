@@ -47,6 +47,14 @@ const artists = [
         age: 35,
     },
 
+    {
+        id: 6,
+        name: "Yohann",
+        image: "https://zupimages.net/up/21/34/au34.jpg",
+        description: "Yohann la fée des forêts est un jeune artiste très talentueux, surtout en dessin, il est fan de papillons",
+        age: 1500,
+    }
+
 ]
 
 module.exports = artists;
