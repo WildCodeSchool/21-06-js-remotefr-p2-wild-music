@@ -5,7 +5,7 @@ function Contact() {
     return (
         <div className="Contact">
             <div className="contact-form">Contact Form</div>
-            <div class="container">
+            <div class="container"> 
 
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your Name.."></input>
