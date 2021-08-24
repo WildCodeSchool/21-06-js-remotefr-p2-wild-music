@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Artist from './Artist';
 import './ArtistDetails.css';
 
-let artists = require('../../data/Artists');
-
 function ArtistDetails(props) {
-    const [artistsFetch, setArtistsFetch] = useState([artists]);
+    const [artistName, setArtistName] = useState("");
+    const [artistImage, setArtistImage] = useState("");
+    const [artistDesc, setArtistDesc] = useState("");
+    const [artistAge, setArtistAge] = useState();
     const artistId = props.match.params.id;
+
     useEffect(() => {
         axios
-        .get(artists[`${artistId}`])
-        .then((res) => res.data)
-        .then((data) => setArtistsFetch(data))
-    }, []);
-    console.log(artists);
+          .get(`https://a.nacapi.com/wildapiartists/${artistId}`)
+          .then((res) => {
+            setArtistName(res.data.name);
+            setArtistImage(res.data.image);
+        
+          })
+      }, [artistId]);
+
     return (
         <div>
-            {artistsFetch.name}
+            <p>{artistName}</p>
+            <img src={artistImage} alt={artistName} />
             {/* {artistsFetch
             .map((artist) => (
                 <div key= {artist.id}>

@@ -19,7 +19,7 @@ function App() {
 				<Route exact path="/" component={Home}/>
 				<Route path="/playlist-songs" component={Listener}/>
 				<Route path="/contact" component={Contact}/>
-        <Route path ='/:id' component={ListeningDetails} />
+        {/* <Route path ='/:id' component={ListeningDetails} /> */}
         <Route path= "/artist/:id" component={ArtistDetails} />
 			</Switch>
       </Router> 

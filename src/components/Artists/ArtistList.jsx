@@ -25,10 +25,9 @@ function ArtistList() {
     return (
 
         <div className= "ArtistList">
-             <h2>Artistes Populaires</h2>
+            <h2>Artistes Populaires</h2>
             <div className="slide">
-             <Slider {...settings}>
-
+            <Slider {...settings}>
                 {artists
                 .map((artist) => (
                     <div key= {artist.id}>
