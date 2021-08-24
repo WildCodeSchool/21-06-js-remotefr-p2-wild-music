@@ -8,19 +8,20 @@ function Footer() {
             <div className="footer-columns-container">
                  <div className="footer-column footer-column-about">
                      <h4>About Us</h4>  
-                     <span className='text'> 
+                     <div className='text'> 
                          <p>WildMusic aims</p>
                          <p>to give you access to a</p>
                          <p>wide choice of playlists.</p>
                          <p className="greetings-text">Developped by the wilders</p>
                          <p>Sarah, Karim, JM, Moana</p>
                          <p>and Anne.</p>
-                     </span>
+                     </div>
                  </div>
                 <div className="footer-column footer-column-adress">
                     <div className="adress">
                        <h4>Adress</h4>
-                       <span>WildMusic@hotmail.com</span>
+                       <p className="email-adress">WildMusic@hotmail.com</p>
+                       <p>Remote</p>
                        </div>
                 </div>
                 <div className="footer-column footer-column-social">

@@ -2,47 +2,58 @@
     background-color: #f7d9b4;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .footer-columns-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-right: 145px;
 }
 
 .greetings-text {
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .text {
     font-size: 0.9em;
+    margin-top: 8px;
+}
+
+.email-adress {
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .footer-column {
-    color: blueviolet;
+    color: white;
     text-align: center;
     font-size: 1em;
 }
 
 .footer-column h4 {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 5px;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .social-links {
     display: flex;
     justify-content: space-around;
-    font-size: 1.2em;
+    font-size: 2em;
+    margin-top: 25px;
 }
 
 .social-links a:hover {
-    color: grey;
+    color: rgb(242, 182, 91);
 }
 
 .greetings {
-    color: blueviolet;
+    color: white;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 812px)
