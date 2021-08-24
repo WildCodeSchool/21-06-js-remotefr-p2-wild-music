@@ -72,7 +72,7 @@ input[type='submit']:hover {
 
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 812px) {
   .Contact {
     width: 80%;
   }
@@ -83,3 +83,4 @@ input[type='submit']:hover {
     width: 70%;
   }
 }
+
