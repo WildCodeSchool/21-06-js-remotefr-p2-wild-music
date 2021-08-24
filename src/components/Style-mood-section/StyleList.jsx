@@ -1,4 +1,4 @@
-import PlaylistCard from './PlaylistCard';
+import GenreCard from './GenreCard';
 import './StyleList.css'
 let styles = require('../../data/styles')
 
@@ -9,7 +9,7 @@ function StyleList() {
                 {styles
                 .map((style) => (
                     <div key={style.id}>
-                        <PlaylistCard style={style}/>
+                        <GenreCard style={style}/>
                     </div>
                 ))}
             </div>

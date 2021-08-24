@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import GenreList from './pages/GenreList';
+import GenreDetails from './components/Style-mood-section/GenreDetails';
 import Contact from './pages/Contact';
 import NavBar from './components/nav/NavBar';
-import ListeningList from './pages/ListeningList';
 import Footer from './components/footer/Footer';
-import ListeningDetails from './components/ListeningDetails';
 import './App.css';
 
 function App() {
@@ -14,9 +14,9 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/playlist-songs" component={ListeningList}/>
+          <Route path="/musics" component={GenreList}/>
+          <Route exact path ="/musics/:genre" component={GenreDetails} />
           <Route path="/contact" component={Contact}/>
-          <Route path ='/music/:genre' component={ListeningDetails} />
         </Switch>
         </Router> 
       <Footer />
