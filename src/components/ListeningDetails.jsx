@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 function ListeningDetails(props) {
     const [playlistDetails, setPlaylistDetails] = useState();
     const [playlistImages, setPlaylistImages] = useState();
-    const playlistId = props.match.params.id;
+    const playlistGenre = props.match.params.genre;
  
     useEffect(() => {
         axios
-        .get(`http://localhost:8000/musics/${playlistId}`)
+        .get(`http://localhost:8000/musics/${playlistGenre}`)
         .then((res) => {
-        setPlaylistDetails(res.data.id)
+        setPlaylistDetails(res.data.genre)
         setPlaylistImages(res.data.img)}); 
-    }, [playlistId])
+    }, [playlistGenre])
 
     return (
         <div>

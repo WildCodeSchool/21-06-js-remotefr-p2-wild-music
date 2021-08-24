@@ -9,17 +9,18 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">     
-      <NavBar />
-      <Router>
-			<Switch>
-				<Route exact path="/" component={Home}/>
-				<Route path="/playlist-songs" component={ListeningList}/>
-				<Route path="/contact" component={Contact}/>
-        <Route path ='/:id' component={ListeningDetails} />
-			</Switch>
-      </Router> 
+    <div className="App"> 
+      <Router>    
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/playlist-songs" component={ListeningList}/>
+          <Route path="/contact" component={Contact}/>
+          <Route path ='/music/:genre' component={ListeningDetails} />
+        </Switch>
+        </Router> 
       <Footer />
+      
     </div>
   );
 }
