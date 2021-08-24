@@ -26,7 +26,7 @@ function NavBar() {
 			{/* <Link className="icon-link" to="/" >	
 				<HiHome className="icon"/>
 				</Link> */}
-				<Link  id="contact-link" to="/contact">Contact
+				<Link  id="contact-link" to="/contact">contact
 				{/* <IoMdContact className="icon"/> */}
 				</Link>
 			</div>
