@@ -14,9 +14,9 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/playlist-songs" component={ListeningList}/>
+          <Route path="/musics" component={ListeningList}/>
+          <Route path ='/musics/:genre' component={ListeningDetails} />
           <Route path="/contact" component={Contact}/>
-          <Route path ='/music/:genre' component={ListeningDetails} />
         </Switch>
         </Router> 
       <Footer />
