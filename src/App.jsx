@@ -5,8 +5,10 @@ import NavBar from './components/nav/NavBar';
 import Listener from './pages/Listening';
 import Footer from './components/footer/Footer';
 // import ListeningList from './pages/ListeningList';
+import ArtistDetails from './components/Artists/ArtistDetails';
 import ListeningDetails from './components/ListeningDetails';
 import './App.css';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
 				<Route path="/playlist-songs" component={Listener}/>
 				<Route path="/contact" component={Contact}/>
         <Route path ='/:id' component={ListeningDetails} />
+        <Route path= "/artist/:id" component={ArtistDetails} />
 			</Switch>
       </Router> 
       <Footer />
