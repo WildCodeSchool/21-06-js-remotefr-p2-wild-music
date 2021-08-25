@@ -3,19 +3,25 @@ import './PlaylistCard.css'
 
 import { TiHeartOutline, TiHeart } from 'react-icons/ti';
 
-function PlaylistCard({style, onAdd, onRemove}) {
-     
+function PlaylistCard({style}) {
     const [isFavorite, setIsFavorite] = useState(false)
-
+    const [favPlaylist, setFavPlaylist] = useState(0);
 
     const handleClick = () => {
         setIsFavorite(!isFavorite)
     }
 
+    const addOnFav = () => {
+        if(isFavorite === true) {
+            setFavPlaylist( favPlaylist - 1)
+        } else {
+            setFavPlaylist( favPlaylist + 1 )
+        }
+    }
+
     const onClick = () => {
           handleClick();
-          onAdd();
-         
+          addOnFav();
       }
     // onRemove()
     // const addToFavorite = (style) => {
