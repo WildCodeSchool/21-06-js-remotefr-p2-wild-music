@@ -1,8 +1,9 @@
-.StyleList {
+.GenresList {
     background : var(--bg-stylelist);
+    margin-top: 50px;
 }
 
-.style-container {
+.genres-container {
     display : flex;
     flex-wrap : wrap;
     width : 80vw;
@@ -11,7 +12,7 @@
 }
 
 @media screen and (min-width: 375px) and (max-width:1024px){
-    .StyleList {
+    .GenresList {
         margin-top: 25px;
     }
 }
