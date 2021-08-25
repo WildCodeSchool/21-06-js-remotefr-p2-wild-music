@@ -15,7 +15,7 @@
 }
 
 .contact-form {
-  font-size: 3.5vh;
+  font-size: 3.6vh;
   color: white;
   text-align: center;
   margin-bottom: 25px;
@@ -75,7 +75,7 @@ input[type='submit']:hover {
 @media (min-width: 320px) and (max-width: 812px) {
   .Contact {
     width: 80%;
-    height: 65.2vh;
+    height: 65.9vh;
   }
 }
 
