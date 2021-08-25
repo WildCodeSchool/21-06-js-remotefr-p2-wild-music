@@ -2,10 +2,11 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import NavBar from './components/nav/NavBar';
+import ArtistDetails from './components/Artists/ArtistDetails';
 import Listener from './pages/Listening';
 import Footer from './components/footer/Footer';
 // import ListeningList from './pages/ListeningList';
-import ArtistDetails from './components/Artists/ArtistDetails';
+
 import ListeningDetails from './components/ListeningDetails';
 import './App.css';
 
@@ -20,7 +21,7 @@ function App() {
 				<Route path="/playlist-songs" component={Listener}/>
 				<Route path="/contact" component={Contact}/>
         {/* <Route path ='/:id' component={ListeningDetails} /> */}
-        <Route path= "/artist/:id" component={ArtistDetails} />
+        <Route path= "/Artist/:id" component={ArtistDetails} />
 			</Switch>
       </Router> 
       <Footer />

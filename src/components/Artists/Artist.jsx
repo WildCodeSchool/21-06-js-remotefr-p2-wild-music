@@ -8,12 +8,12 @@ function Artist({artist}) {
         <div className= "Artist">            
             <article className= "artist-card">            
                 <div className= "img-container">
+                <div className= "artist-card-content">
+                    <h2>{artist.name}</h2>
+                </div>
                 <Link to={{ pathname: `/artist/${artist.id}`}}>
                 <img className= "artist-img" src={artist.image} alt={artist.name} />
                 </Link>
-                </div>
-                <div className= "artist-card-content">
-                    <h2>{artist.name}</h2>
                 </div>
             </article>            
         </div>

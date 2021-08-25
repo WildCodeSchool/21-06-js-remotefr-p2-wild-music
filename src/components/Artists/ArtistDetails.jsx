@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { FaHome } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './ArtistDetails.css';
 
@@ -30,19 +31,33 @@ function ArtistDetails(props) {
         
           })
       }, [artistId]);
-
+      let iconStyles = {color: "#f7d9b4", fontSize: "1.5em", marginBottom: "-60px"}
     return (
-        <div>
-            <img src={artistImage} alt={artistName} />
-            <p>{artistName}</p>
-            <span>{artistAge} ans</span>
-            <p>{artistDesc}</p>
-            <iframe width="560" height="315" src={artistSong} allowfullscreen></iframe>
-            <iframe width="560" height="315" src={artistSong2} allowfullscreen></iframe>
-            <iframe width="560" height="315" src={artistSong3} allowfullscreen></iframe>
-            <iframe width="560" height="315" src={artistSong4} allowfullscreen></iframe>
-
-            <Link to={{pathname:'/'}}>Retour à la page accueil</Link>
+        <div className="container-artist">
+          <div className="container-img">
+            <img className="img-artist" src={artistImage} alt={artistName} />
+          </div>
+          <div className="text-artist">
+            <p className="name-artist">{artistName}</p>
+            <span className="age-artist">{artistAge} ans</span>
+            <p className="desc-artist">{artistDesc}</p>
+          </div>
+          <div className="videos">
+          <div className="corner-wrapper">
+            <iframe className="song1" width="560" height="315" frameBorder="0" src={artistSong} allowfullscreen></iframe>
+          </div>
+          <div className="corner-wrapper2">
+            <iframe className="song2" width="560" height="315" frameBorder="0" src={artistSong2} allowfullscreen></iframe>
+          </div>
+          <div className="corner-wrapper">
+            <iframe className="song3" width="560" height="315" frameBorder="0" src={artistSong3} allowfullscreen></iframe>
+          </div>
+          <div className="corner-wrapper">
+            <iframe className="song4" width="560" height="315" frameBorder="0" src={artistSong4} allowfullscreen></iframe>
+          </div>
+          </div>
+          
+            <Link to={{pathname:'/'}}><FaHome style={iconStyles}/></Link>
         </div>
     )
 }

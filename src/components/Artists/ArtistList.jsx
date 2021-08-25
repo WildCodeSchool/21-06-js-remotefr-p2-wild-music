@@ -13,14 +13,27 @@ function ArtistList() {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "11vw",
+        centerPadding: "33vw",
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 500,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 1800,
-        pauseOnHover: true
+        autoplaySpeed: 2500,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 812,
+                settings: {
+                    centerPadding: "3vw"
+                },
+                breakpoint: 1112,
+                settings: {
+                    centerPadding: "6vw"
+                }
+
+            }
+        ]
       };
     return (
 
