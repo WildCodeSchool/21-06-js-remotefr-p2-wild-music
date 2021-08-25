@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import "./GenreCard.css"
 
 
-function GenreCard({genre }) {
+function GenreCard({ genre }) {
     return (
         <div className='GenreCard'>
             <div className='playlist-container'>

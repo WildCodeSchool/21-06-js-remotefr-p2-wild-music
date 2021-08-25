@@ -25,11 +25,11 @@ function GenreDetails(props) {
             <Link to={genrePlay.url}>
                 <img src={`https://openwhyd.org${genrePlay.img}`} alt="playlist" /></Link>
             </span>
-            <span className="Genre-play1">
+            <span className="Genre-play2">
             <Link to={genrePlay1.url}>
                 <img src={`https://openwhyd.org${genrePlay1.img}`} alt="playlist" /></Link>
             </span>
-            <span className="Genre-play1">
+            <span className="Genre-play3">
             <Link to={genrePlay2.url}>
                 <img src={`https://openwhyd.org${genrePlay2.img}`} alt="playlist" /></Link>
             </span>
