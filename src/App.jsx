@@ -21,7 +21,7 @@ function App() {
 				<Route path="/playlist-songs" component={Listener}/>
 				<Route path="/contact" component={Contact}/>
         {/* <Route path ='/:id' component={ListeningDetails} /> */}
-        <Route path= "/Artist/:id" component={ArtistDetails} />
+        <Route path= "/artist/:id" component={ArtistDetails} />
 			</Switch>
       </Router> 
       <Footer />
