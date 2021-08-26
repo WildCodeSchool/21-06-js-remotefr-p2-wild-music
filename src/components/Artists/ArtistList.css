@@ -12,9 +12,11 @@
 .slide {
     padding-left: 13vw;
     padding-right: 13vw;
-
 }
 
 .slick-prev:before, .slick-next:before {
     color: black !important;
   }
+
+
+  

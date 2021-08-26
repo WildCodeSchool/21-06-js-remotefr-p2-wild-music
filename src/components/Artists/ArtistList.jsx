@@ -13,15 +13,16 @@ function ArtistList() {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "11vw",
+        centerPadding: "33.3vw",
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 500,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 1800,
+        autoplaySpeed: 3800,
         pauseOnHover: true
       };
+      
     return (
 
         <div className= "ArtistList">

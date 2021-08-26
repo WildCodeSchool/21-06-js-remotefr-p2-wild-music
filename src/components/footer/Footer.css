@@ -8,8 +8,8 @@
 .footer-columns-container {
     display: flex;
     justify-content: space-between;
-    margin-left: 130px;
-    margin-right: 162px;
+    margin-left: 50px;
+    margin-right: 80px;
 }
 
 .greetings-text {
