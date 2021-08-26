@@ -1,6 +1,4 @@
 .PlaylistCard {
-    display: flex;
-    flex-direction: column;
     margin : 40px;
 }
 
@@ -30,16 +28,30 @@
     margin-top: 70px;
 }
 
-.quote {
+.hoverText {
     margin-right: auto;
     margin-left: auto;
-    visibility: hidden;
+}
+
+.favBtn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    font-size: 30px;
+    color: #f7d9b4;
+    right: 1%;
+    bottom : 1%;
 }
 
 .playerBtn {
-    margin-top:auto;
-    margin-bottom: auto;
     cursor: pointer;
+    height: 50px;
+}
+
+.quote{
+    color: white;
+    font-size: 1.1em;
 }
 
 .playlist-container .styleImg {
@@ -51,29 +63,73 @@
     box-shadow:0 0 0px rgba(0, 0, 0, 0.70);
 }
 
-.playlist-container:hover .styleImg {
-    box-shadow:0 0 10px rgba(0, 0, 0, 1);
-    opacity: 0.8 ;
-    transition: .2s ease;
+@media screen and (min-width:1025px) {
+    .hoverText{
+        visibility: hidden;
+    }
+
+    .playlist-container:hover{
+        transition: 0.6 ease ;
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.70);
+    }
+
+    .playlist-container:hover .playerBtn {
+        box-shadow:0 0 10px rgba(0, 0, 0, 1);
+        border-radius: 50%;
+    }
+
+    .playlist-container:hover .hoverText {
+        width: 90%;
+        transition: 0.6s ease;
+        visibility: visible;
+        margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px;
+    }
+
+    .playlist-container:hover .playlistTitle {
+        transition: 1s ease;
+        margin-top: 0px;
+    }
 }
 
-.playlist-container:hover .playlistTitle {
-    transition: 1s ease;
-    margin-top: 0px;
-    color: black;
+@media screen and (max-width: 1024px)  {
+    .playerBtn{
+        box-shadow:0 0 10px rgb(0, 0, 0);
+        border-radius: 50%;
+    }
+    .playlistTitle {
+        margin-top: 50px;
+        margin-bottom: 10px;;
+    }
+
+    .quote {
+        visibility: hidden;
+    }
 }
 
-.playlist-container:hover .quote {
-    width: 90%;
-    transition: 0.6s ease;
-    transform: translateY(20%);
-    visibility: visible;
-    margin-bottom: 10px;
-    margin-right: auto;
-    margin-left: auto;
-}
+@media screen and (min-width: 375px) and (max-width:899px){
+    .PlaylistCard {
+        margin: 5px;
+    }
 
-.playlist-container:hover .playerBtn {
-    box-shadow:0 0 10px rgba(0, 0, 0, 1);
-    border-radius: 50%;
+    .playlist-container {
+        width : 140px;
+        height: 90px;
+    }
+
+    .playlistTitle {
+        font-size: 1em;
+        margin-top: 0;
+    }
+
+    .playerBtn {
+        height : 30px;
+    }
+
+    .quote {
+        visibility: hidden;
+        height : 0px;
+    }
 }
