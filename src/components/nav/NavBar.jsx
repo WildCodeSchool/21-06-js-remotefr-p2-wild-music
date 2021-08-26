@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import logo from '../../images/WildMusic.png';
-// import { IoMdContact } from 'react-icons/io';
-// import { HiHome } from 'react-icons/hi';
+import { FiMail } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import './NavBar.scss';
 
@@ -23,11 +22,10 @@ function NavBar() {
 				<img id="logo" src={logo} alt='WildMusic-logo' />
 				<Link id="title" to="/">WildMusic</Link>
 			<div className="contact">
-			{/* <Link className="icon-link" to="/" >	
-				<HiHome className="icon"/>
-				</Link> */}
+			<Link className="icon-link" to="/contact" >	
+				<FiMail className="icon"/>
+				</Link>
 				<Link  id="contact-link" to="/contact">contact
-				{/* <IoMdContact className="icon"/> */}
 				</Link>
 			</div>
 		</div>
