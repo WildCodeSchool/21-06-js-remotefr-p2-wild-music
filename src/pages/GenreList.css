@@ -1,17 +1,11 @@
-.StyleList {
+.Genres {
     background : var(--bg-stylelist);
 }
 
-.style-container {
+.genres-container {
     display : flex;
     flex-wrap : wrap;
     width : 80vw;
     justify-content: space-evenly;
     margin: 0px auto ;
-}
-
-@media screen and (min-width: 375px) and (max-width:1024px){
-    .StyleList {
-        margin-top: 25px;
-    }
 }

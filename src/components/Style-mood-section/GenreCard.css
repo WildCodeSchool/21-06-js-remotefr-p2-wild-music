@@ -1,0 +1,79 @@
+.GenreCard {
+    display: flex;
+    flex-direction: column;
+    margin : 40px;
+}
+
+.playlist-container {
+    display : flex;
+    flex-direction: column;
+    width : 280px;
+    height: 230px;
+    position: relative;
+    border-radius: 5px;
+    cursor:default;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.playlistTitle {
+    color: white;
+    margin-top: 70px;
+}
+
+.quote {
+    margin-right: auto;
+    margin-left: auto;
+    visibility: hidden;
+}
+
+.playerBtn {
+    margin-top:auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.playlist-container .styleImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    border-radius: 5px;
+    box-shadow:0 0 0px rgba(0, 0, 0, 0.70);
+}
+
+.playlist-container:hover .styleImg {
+    box-shadow:0 0 10px rgba(0, 0, 0, 1);
+    opacity: 0.8 ;
+    transition: .2s ease;
+}
+
+.playlist-container:hover .playlistTitle {
+    transition: 1s ease;
+    margin-top: 0px;
+    color: black;
+}
+
+.playlist-container:hover .quote {
+    width: 90%;
+    transition: 0.6s ease;
+    transform: translateY(20%);
+    visibility: visible;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.playlist-container:hover .playerBtn {
+    box-shadow:0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 50%;
+}
