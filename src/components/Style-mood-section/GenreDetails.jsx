@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import "./GenreDetails.css";
  
 function GenreDetails(props) {
     const [genrePlay, setGenrePlay] = useState([]);
     const [genrePlay1, setGenrePlay1] = useState([]);
     const [genrePlay2, setGenrePlay2] = useState([]);
-    // const [genreTracks, setGenreTracks] = useState();
+    // const [genreTracks, setGenreTracks] = useState([]);
+    const [quotePlay, setQuotePlay] = useState();
     const genreID = props.match.params.genre;
  
     useEffect(() => {
@@ -15,23 +17,28 @@ function GenreDetails(props) {
         .then((res) => {
         setGenrePlay(res.data.playlist);
         setGenrePlay1(res.data.playlist1);
-        setGenrePlay2(res.data.playlist2)});
+        setGenrePlay2(res.data.playlist2);
+        setQuotePlay(res.data.quotePlay)});
         // setGenreTracks(res.data.nbTracks)});
     }, [genreID])
  
     return (
         <div className="GenreDetails">
-            <span className="Genre-play1">
-            <Link to={genrePlay.url}>
-                <img src={`https://openwhyd.org${genrePlay.img}`} alt="playlist" /></Link>
+            <h1 className="genre-quote">{quotePlay}</h1>
+            <span className="genre-play1">
+            <a href={genrePlay.url}>
+                <img className="img-play1" src={genrePlay.img} alt="playlist" />
+            </a>
             </span>
-            <span className="Genre-play2">
-            <Link to={genrePlay1.url}>
-                <img src={`https://openwhyd.org${genrePlay1.img}`} alt="playlist" /></Link>
+            <span className="genre-play2">
+            <a href={genrePlay1.url}>
+                <img className="img-play2" src={genrePlay1.img} alt="playlist" />
+            </a>
             </span>
-            <span className="Genre-play3">
-            <Link to={genrePlay2.url}>
-                <img src={`https://openwhyd.org${genrePlay2.img}`} alt="playlist" /></Link>
+            <span className="genre-play3">
+            <a href={genrePlay2.url}>
+                <img className="img-play2" src={genrePlay2.img} alt="playlist" />
+            </a>
             </span>
         </div>
     )
