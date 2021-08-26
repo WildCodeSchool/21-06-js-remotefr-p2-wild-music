@@ -5,6 +5,7 @@ import GenreDetails from './components/Style-mood-section/GenreDetails';
 import Contact from './pages/Contact';
 import NavBar from './components/nav/NavBar';
 import Footer from './components/footer/Footer';
+import Fav from './components/Fav/Fav'
 import './App.css';
 // import Cart from './components/Cart/Cart';
 
@@ -13,6 +14,7 @@ function App() {
     <div className="App"> 
       <Router>    
         <NavBar />
+        <Fav />
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/musics" component={GenreList}/>

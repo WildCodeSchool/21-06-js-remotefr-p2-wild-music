@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import FavContext from '../context/cart/FavContext';
 // import GenreList from '../../pages/GenreList';
 import "./GenreCard.css"
 
@@ -8,7 +9,7 @@ import { TiHeartOutline, TiHeart } from 'react-icons/ti';
 import './GenreCard.css';
 
 function GenreCard({ genre }) {
-
+    const { addToCart } = useContext(FavContext)
     const [isFavorite, setIsFavorite] = useState(false)
 
     const handleClick = () => {
@@ -17,7 +18,7 @@ function GenreCard({ genre }) {
 
     const onClick = () => {
           handleClick();
-        //   onAdd();       , onAdd 
+          addToCart();
       }
       
     return (
