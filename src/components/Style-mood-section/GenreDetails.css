@@ -6,21 +6,15 @@
     border-radius: 20px;
     width: 45vw;
     padding: 10px;
-    margin-top: 60px;
-    margin-bottom: 80px;
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
-/* h1 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-} */
 
 .GenreDetails-container{
     display: flex;
     flex-direction: column; 
     align-items: center;
-    /* width: 40vw; */
+    height: 100vh;
 }
 
 .genre-play{
@@ -28,7 +22,10 @@
     justify-content: space-evenly;
     flex-direction: row;
     width: 100%;
+    margin: auto;
+    margin-bottom: auto;
 }
+
 
 .img-play{
     width: 30vw;
@@ -50,7 +47,8 @@
 @media (min-width: 320px) and (max-width: 812px){
     .genre-quote{
         font-size:0.5em;
-        width: 70vw;
+        width: 80vw;
+        margin-bottom: 60px;
     }
     .genre-play{
         display: flex;
@@ -58,9 +56,10 @@
         flex-direction: column;
         width: 100%;
         align-items: center;
+        height: 80vh;
     }
     .img-play{
-        width: 70vw;
+        width: 60vw;
         border-radius: 20px;
         margin-bottom: 10px;
     }
@@ -73,14 +72,26 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1112px){
     .genre-quote{
-        font-size:1em;
+        font-size:0.9em;
         width: 70vw;
+        margin-bottom: 120px;
     }
+
+    .genre-play{
+        height: 50vh;
+    }
+
+    .img-play{
+        width: 40vw;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
     .playBtn {
         position:relative;
         cursor: pointer;
         margin-left: 45%;
-        margin-bottom: -10%;
+        margin-bottom: -30px;
         width: 15%;
     }
 }
