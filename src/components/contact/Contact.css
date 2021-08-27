@@ -75,7 +75,7 @@ input[type='submit']:hover {
 @media (min-width: 320px) and (max-width: 812px) {
   .Contact {
     width: 80%;
-    height: 65.9vh;
+    height: 71vh;
   }
 }
 
@@ -83,7 +83,7 @@ input[type='submit']:hover {
   .Contact {
     height: 83.5vh;
     width: 80%;
-    margin-top: 0px;
+    margin-top: -90px;
     margin-bottom: -90px;
   }
 }
