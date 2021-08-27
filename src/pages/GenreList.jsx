@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import GenreCard from '../components/Style-mood-section/GenreCard';
+import Fav from '../components/Fav/Fav'
 import axios from 'axios';
 import "./GenreList.css";
 
@@ -21,6 +22,7 @@ function GenreList() {
             {genres
             .map((genre) => 
                 <div key={genre.id}>
+                    <Fav genre={genre}/>
                     <GenreCard genre={genre}/>
                 </div>)}
             </div> 

@@ -6,8 +6,10 @@ import Contact from './pages/Contact';
 import NavBar from './components/nav/NavBar';
 import ArtistDetails from './components/Artists/ArtistDetails';
 import Footer from './components/footer/Footer';
+import Fav from './components/Fav/Fav'
 import Loader from './components/loader/Loader';
 import { useEffect, useState } from 'react';
+
 import './App.css';
 
 
@@ -29,6 +31,7 @@ function App() {
     <div className="App">
       <Router>    
         <NavBar />
+        <Fav />
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/musics" component={GenreList}/>

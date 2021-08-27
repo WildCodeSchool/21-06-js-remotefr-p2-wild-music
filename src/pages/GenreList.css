@@ -1,5 +1,6 @@
 .Genres {
     background : var(--bg-stylelist);
+    margin-top: 20px;
 }
 
 .genres-container {
