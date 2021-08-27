@@ -13,23 +13,34 @@ function ArtistList() {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "33.3vw",
+        centerPadding: "33vw",
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 500,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 3800,
-        pauseOnHover: true
+        autoplaySpeed: 2500,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 812,
+                settings: {
+                    centerPadding: "3vw"
+                },
+                breakpoint: 1112,
+                settings: {
+                    centerPadding: "6vw"
+                }
+
+            }
+        ]
       };
-      
     return (
 
         <div className= "ArtistList">
-             <h2>Artistes Populaires</h2>
+            <h2>Artistes Populaires</h2>
             <div className="slide">
-             <Slider {...settings}>
-
+            <Slider {...settings}>
                 {artists
                 .map((artist) => (
                     <div key= {artist.id}>
