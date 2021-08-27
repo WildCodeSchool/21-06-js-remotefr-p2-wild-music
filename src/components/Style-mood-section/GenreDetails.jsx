@@ -29,15 +29,15 @@ function GenreDetails(props) {
             <h1>{quotePlay}</h1>
             </div>
             <div className="genre-play">
-            <a href={genrePlay.url}>
+            <a href={genrePlay.url} target='_blank'>
                 <img className="img-play" src={genrePlay.img} alt="playlist" />
                 <img src="https://img.icons8.com/material/48/000000/play-button-circled--v4.png" alt='playBtn' className='playBtn'/> 
             </a>
-            <a href={genrePlay1.url}>
+            <a href={genrePlay1.url} target='_blank'>
                 <img className="img-play" src={genrePlay1.img} alt="playlist" />
                 <img src="https://img.icons8.com/material/48/000000/play-button-circled--v4.png" alt='playBtn' className='playBtn'/> 
             </a>
-            <a href={genrePlay2.url}>
+            <a href={genrePlay2.url} target='_blank'>
                 <img className="img-play" src={genrePlay2.img} alt="playlist" />
                 <img src="https://img.icons8.com/material/48/000000/play-button-circled--v4.png" alt='playBtn' className='playBtn'/> 
             </a>

@@ -29,9 +29,9 @@ function GenreCard({ genre }) {
                     <h2 className='playlistTitle'>{genre.genre}</h2>
                     <div className='hoverText'>
                     <div className='quote'>
-                        <Link to={{ pathname: `/musics/${genre.genre}` }}>
-                        <img src="https://img.icons8.com/material/48/000000/play-button-circled--v4.png" alt='playerBtn' className='playerBtn'/>
-                        </Link>
+                            <Link to={{ pathname: `/musics/${genre.genre}` }}>
+                            <img src="https://img.icons8.com/material/48/000000/play-button-circled--v4.png" alt='playerBtn' className='playerBtn'/>
+                            </Link>
                         <p><em>{genre.quote}</em></p>
                         <span>{genre.quoteBy}</span>                
                     </div>

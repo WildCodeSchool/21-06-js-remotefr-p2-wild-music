@@ -38,7 +38,7 @@ function ArtistList() {
     return (
 
         <div className= "ArtistList">
-            <h2>Artistes Populaires</h2>
+            <h2>Popular Artists</h2>
             <div className="slide">
             <Slider {...settings}>
                 {artists
