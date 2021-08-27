@@ -29,8 +29,8 @@ function NavBar() {
 					<span 
 						onClick={showHideCart} 
 						aria-hidden='true'>
-						<TiHeartOutline/>
-						Favoris
+						<TiHeartOutline className="icon"/>
+						<Link id="contact-link">Favoris</Link>
 					</span>
 					{cartItems.length > 0 && (
 					<div className='item__count'>
