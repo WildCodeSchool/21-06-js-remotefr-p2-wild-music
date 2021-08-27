@@ -24,22 +24,25 @@ function GenreDetails(props) {
  
     return (
         <div className="GenreDetails">
-            <h1 className="genre-quote">{quotePlay}</h1>
-            <span className="genre-play1">
+          <div className="GenreDetails-container">
+            <div className="genre-quote">
+            <h1>{quotePlay}</h1>
+            </div>
+            <div className="genre-play">
             <a href={genrePlay.url}>
-                <img className="img-play1" src={genrePlay.img} alt="playlist" />
+                <img className="img-play" src={genrePlay.img} alt="playlist" />
+                <img src="https://img.icons8.com/material/48/000000/play-button-circled--v4.png" alt='playBtn' className='playBtn'/> 
             </a>
-            </span>
-            <span className="genre-play2">
             <a href={genrePlay1.url}>
-                <img className="img-play2" src={genrePlay1.img} alt="playlist" />
+                <img className="img-play" src={genrePlay1.img} alt="playlist" />
+                <img src="https://img.icons8.com/material/48/000000/play-button-circled--v4.png" alt='playBtn' className='playBtn'/> 
             </a>
-            </span>
-            <span className="genre-play3">
             <a href={genrePlay2.url}>
-                <img className="img-play2" src={genrePlay2.img} alt="playlist" />
+                <img className="img-play" src={genrePlay2.img} alt="playlist" />
+                <img src="https://img.icons8.com/material/48/000000/play-button-circled--v4.png" alt='playBtn' className='playBtn'/> 
             </a>
-            </span>
+            </div>
+          </div>
         </div>
     )
 }
