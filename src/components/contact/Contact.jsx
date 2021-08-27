@@ -5,13 +5,13 @@ function Contact() {
     return (
         <div className="Contact">
             <div className="contact-form">Contact Form</div>
-            <div class="container">
+            <div class="container"> 
 
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name.."></input>
+                <input type="text" id="name" name="name" placeholder="Name"></input>
 
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="For_example@hotmail.com..."></input>
+                <input type="text" id="email" name="email" placeholder="For-example@hotmail.com"></input>
 
                 <label for="country">Country</label>
                 <select id="country" name="country">
@@ -21,7 +21,7 @@ function Contact() {
                 </select>
 
                 <label for="Request">Request</label>
-                <textarea id="request" name="request" placeholder="Text..."></textarea>
+                <textarea className="request" name="request" placeholder="Text..."></textarea>
 
                 <input className= "submit" type="submit" value="Submit" onClick={()=> alert("You've just submitted your Contact form !")}></input>
 
