@@ -14,13 +14,7 @@
     max-height: 50vh;
     overflow-y: auto;
   }
-  
-  .Cart__cartTotal {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
+
   .fa-times-circle {
     color: gray;
     transition: transform 0.2s linear;
