@@ -6,7 +6,6 @@ import Contact from './pages/Contact';
 import NavBar from './components/nav/NavBar';
 import Footer from './components/footer/Footer';
 import Loader from './components/loader/Loader';
-import { Switch, Route} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import './App.css';
 // import Cart from './components/Cart/Cart';
@@ -26,6 +25,7 @@ function App() {
   return loader ? (
     <Loader /> 
   ) : (
+    <div className="App">
       <Router>    
         <NavBar />
         <Switch>
