@@ -12,11 +12,14 @@
     align-items: center;
   }
   
-  li img {
+.favImg{
     height: 100%;
     width: 100px;
     object-fit: cover;
+    border-radius: 5px;
   }
+
+  
   .CartItem__item:nth-child(1) {
     border-top: 1px solid gray;
   }

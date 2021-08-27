@@ -31,7 +31,7 @@ function NavBar() {
 				</Link> */}
 				<div className='favoritesList'>
 					<span 
-						onCLick={showHideCart} 
+						onClick={showHideCart} 
 						aria-hidden='true'>
 						<TiHeartOutline/>
 						Favoris

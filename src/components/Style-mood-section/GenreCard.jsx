@@ -18,7 +18,7 @@ function GenreCard({ genre }) {
 
     const onClick = () => {
           handleClick();
-          addToCart();
+          addToCart(genre);
       }
       
     return (

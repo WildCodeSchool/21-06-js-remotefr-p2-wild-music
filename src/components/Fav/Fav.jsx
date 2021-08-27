@@ -1,10 +1,20 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./Fav.css";
+import axios from 'axios';
 import FavContext from "../context/cart/FavContext";
 import FavPlaylist from "./FavPlaylist";
 
 const Fav = () => {
   const { showCart, cartItems, showHideCart } = useContext(FavContext);
+
+  const [genres, setGenres] = useState([]);
+ 
+  useEffect(() => {
+      axios
+      .get("http://localhost:8000/musics/")
+      .then((res) => res.data)
+      .then((data) => setGenres(data))
+  }, [])
  
   return (
     <>
@@ -22,9 +32,11 @@ const Fav = () => {
             {cartItems.length === 0 ? (
               <h4>Your favorite list is empty</h4>
             ) : (
-              <ul>
-                  <FavPlaylist />
-              </ul>
+              <div>
+                {cartItems.map((item) => (
+                  <FavPlaylist key={item.id} item={item} />
+                ))}
+                </div>
             )}
           </div>
         </div>
