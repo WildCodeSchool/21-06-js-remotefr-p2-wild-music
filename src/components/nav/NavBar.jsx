@@ -1,7 +1,6 @@
 import React, {useState, useContext} from 'react';
 import logo from '../../images/WildMusic.png';
-// import { IoMdContact } from 'react-icons/io';
-// import { HiHome } from 'react-icons/hi';
+import { FiMail } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { TiHeartOutline, TiHeart } from 'react-icons/ti';
 import FavContext from "../context/cart/FavContext";
@@ -26,9 +25,6 @@ function NavBar() {
 				<img id="logo" src={logo} alt='WildMusic-logo' />
 				<Link id="title" to="/">WildMusic</Link>
 			<div className="contact">
-			{/* <Link className="icon-link" to="/" >	
-				<HiHome className="icon"/>
-				</Link> */}
 				<div className='favoritesList'>
 					<span 
 						onClick={showHideCart} 
@@ -42,8 +38,10 @@ function NavBar() {
 					</div>
           			)}
 				</div>
-				<Link  id="contact-link" to="/contact">Contact
-				{/* <IoMdContact className="icon"/> */}
+			<Link className="icon-link" to="/contact" >	
+				<FiMail className="icon"/>
+				</Link>
+				<Link  id="contact-link" to="/contact">contact
 				</Link>
 			</div>
 		</div>

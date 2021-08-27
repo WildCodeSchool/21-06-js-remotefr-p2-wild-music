@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 .navbar {
 	height: 7vh;
@@ -11,19 +11,18 @@
 	z-index: 999;
 
 	&.active {
-		background:#FFB460;
+		background:#f7d9b4;
 		transition: all 0.7s ease;
 	}
 }
 
 #logo {
-	margin-left: 20px;
+	padding-left: 10px;
 }
 
 #title {
 	font-size: 40px;
-	font-weight: 800;
-	padding-left: -30px;
+	font-family: 'Inter', sans-serif;
 	margin-top: auto;
 	margin-bottom: auto;
 	color: white;
@@ -98,8 +97,8 @@
   }
 
 #contact-link {
-	font-size: 20px;
-	font-weight: 800;
+	font-size: 18px;
+	font-family: 'Inter', sans-serif;
 	margin: auto;
 	color: white;
 	position: relative;
@@ -122,27 +121,26 @@
 		right: auto;
 	}
 }
-	
-// .icon-nav {
-// 	display: flex;
-// 	height: 100%;
-// 	width: 83.55px;
-// }
 
-// .icon {
-// 	color: black;
-// 	background-color: white;
-// 	border-radius: 50%;
-// 	height: 28px;
-// 	width: 28px;
-// 	transition: all 0.5s ease;
+.icon {
+	display: none;
+}
 
-// 	&:hover {
-// 		color: white;
-// 		background-color: black;
-// 	}
-// }
+@media screen and (max-width: 640px) {
 
-// .icon-link {
-// 	margin: auto;
-// }
+	#title {
+		padding-right: 10px;
+	}
+
+	.contact a:last-child {
+		display: none;
+	}
+
+	.icon{
+		display: block;
+	}
+
+	.icon {
+	color: white;
+	}
+}
