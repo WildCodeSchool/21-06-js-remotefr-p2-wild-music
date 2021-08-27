@@ -1,8 +1,9 @@
-.StyleList {
-    background : var(--main-background);
+.Genres {
+    background : var(--bg-stylelist);
+    margin-top: 20px;
 }
 
-.style-container {
+.genres-container {
     display : flex;
     flex-wrap : wrap;
     width : 80vw;

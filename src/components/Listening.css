@@ -1,0 +1,15 @@
+.listening {
+    margin: 0;
+    padding: 0;
+}
+
+
+.listening-content{
+    text-align: center;
+    font-size: 0.5em;
+}
+
+.listening-img{
+    width:20vw;
+    height: 30vh;
+}
