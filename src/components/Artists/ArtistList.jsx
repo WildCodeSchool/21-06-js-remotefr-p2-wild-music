@@ -5,7 +5,7 @@ import "./ArtistList.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-let artists = require('../../data/Artists');
+let artists = require('../../data/artists');
 
 function ArtistList() {
 
