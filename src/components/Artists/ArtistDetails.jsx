@@ -46,7 +46,7 @@ function ArtistDetails(props) {
           <div className="corner-wrapper">
             <iframe className="song1" width="560" height="315" frameBorder="0" src={artistSong} allowfullscreen></iframe>
           </div>
-          <div className="corner-wrapper2">
+          <div className="corner-wrapper">
             <iframe className="song2" width="560" height="315" frameBorder="0" src={artistSong2} allowfullscreen></iframe>
           </div>
           <div className="corner-wrapper">
