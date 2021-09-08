@@ -1,11 +1,9 @@
 import React, { useState, useEffect} from 'react';
-import GenreCard from '../components/Style-mood-section/GenreCard';
-import Fav from '../components/Fav/Fav'
+import GenreCard from '../components/style-mood-section/GenreCard';
+import Fav from '../components/fav/Fav'
 import axios from 'axios';
 import "./GenreList.css";
 
- 
- 
 function GenreList() {
     const [genres, setGenres] = useState([]);
  

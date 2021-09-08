@@ -45,14 +45,6 @@ const artists = [
         image: "https://img.20mn.fr/Dx3xcuYHRe-pNajzmn_Pdg/830x532_chanteuse-actrice-lady-gaga.jpg",
         description: "Stefani Germanotta, dite Lady Gaga, née le 28 mars 1986 dans l'arrondissement de Manhattan, à New York, est une auteure-compositrice-interprète, actrice et danseuse américaine.",
         age: 35,
-    },
-
-    {
-        id: 6,
-        name: "Yoann",
-        image: "https://zupimages.net/up/21/34/au34.jpg",
-        description: "Yoann la fée des forêts est un jeune artiste très talentueux, surtout en dessin, il est fan de papillons",
-        age: 1500,
     }
 
 ]

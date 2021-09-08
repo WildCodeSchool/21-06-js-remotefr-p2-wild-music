@@ -1,6 +1,6 @@
 import React from 'react';
 import GenreList from './GenreList';
-import ArtistList from '../components/Artists/ArtistList';
+import ArtistList from '../components/artists/ArtistList';
 
 function Home() {
 	return (

@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import Home from './pages/Home';
 import GenreList from './pages/GenreList';
-import GenreDetails from './components/Style-mood-section/GenreDetails';
+import GenreDetails from './components/style-mood-section/GenreDetails';
 import Contact from './pages/Contact';
 import NavBar from './components/nav/NavBar';
-import ArtistDetails from './components/Artists/ArtistDetails';
+import ArtistDetails from './components/artists/ArtistDetails';
 import Footer from './components/footer/Footer';
-import Fav from './components/Fav/Fav'
+import Fav from './components/fav/Fav'
 import Loader from './components/loader/Loader';
-import { useEffect, useState } from 'react';
 
 import './App.css';
 
