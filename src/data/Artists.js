@@ -1,10 +1,10 @@
 const artists = [
     {
-       id: 0,
-       name: "Angèle",
-       image: "https://media.virginradio.fr/article-4546092-ajust_1020-f8/media.jpg",
-       description: "Angèle Van Laeken, simplement dite Angèle, née le 3 décembre 1995 à Uccle en Belgique, est une auteure-compositrice-interprète, musicienne, productrice, actrice et mannequin belge.",
-       age: 25,
+        id: 0,
+        name: "Angèle",
+        image: "https://tetu.com/wp-content/uploads/2020/08/angele-1024x564.jpg",
+        description: "Angèle Van Laeken, simplement dite Angèle, née le 3 décembre 1995 à Uccle en Belgique, est une auteure-compositrice-interprète, musicienne, productrice, actrice et mannequin belge.",
+        age: 25,
     },
 
     {   
@@ -18,7 +18,7 @@ const artists = [
     {   
         id: 2,
         name: "Doja Cat",        
-        image: "https://img.nrj.fr/GdnxbWpYortiVNTbzEA-jflcIiY=/800x450/smart/https%3A%2F%2Fimage-api.nrj.fr%2Fmedias%2F2020%2F03%2Fdoja-cat_5e71ee107b3f3.jpg",
+        image: "https://media.bantmag.com/wp-content/uploads/2021/12/doja-cat-header-1-800x533.webp",
         description: "Doja Cat, de son vrai nom Amala Ratna Zandile Dlamini, née le 21 octobre 1995 à Los Angeles, dans l'État de Californie, aux États-Unis, est une rappeuse, auteure-compositrice-interprète, productrice de musique et réalisatrice artistique américaine.",
         age: 25,   
     },

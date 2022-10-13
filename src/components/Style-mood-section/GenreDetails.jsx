@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import "./GenreDetails.css";
- 
+
 function GenreDetails(props) {
     const [genrePlay, setGenrePlay] = useState([]);
     const [genrePlay1, setGenrePlay1] = useState([]);
     const [genrePlay2, setGenrePlay2] = useState([]);
-    // const [genreTracks, setGenreTracks] = useState([]);
     const [quotePlay, setQuotePlay] = useState();
     const genreID = props.match.params.genre;
- 
+
     useEffect(() => {
         axios
         .get(`http://localhost:8000/musics/${genreID}`)
@@ -18,13 +16,13 @@ function GenreDetails(props) {
         setGenrePlay(res.data.playlist);
         setGenrePlay1(res.data.playlist1);
         setGenrePlay2(res.data.playlist2);
-        setQuotePlay(res.data.quotePlay)});
-        // setGenreTracks(res.data.nbTracks)});
+        setQuotePlay(res.data.quotePlay)
+    });
     }, [genreID])
- 
+
     return (
         <div className="GenreDetails">
-          <div className="GenreDetails-container">
+        <div className="GenreDetails-container">
             <div className="genre-quote">
             <h1>{quotePlay}</h1>
             </div>
@@ -42,9 +40,9 @@ function GenreDetails(props) {
                 <img src="https://img.icons8.com/material/48/000000/play-button-circled--v4.png" alt='playBtn' className='playBtn'/> 
             </a>
             </div>
-          </div>
+        </div>
         </div>
     )
 }
- 
+
 export default GenreDetails

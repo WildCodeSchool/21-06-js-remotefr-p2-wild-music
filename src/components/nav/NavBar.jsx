@@ -9,11 +9,10 @@ function NavBar() {
 
 	const changeBackround = () => {
 		if (window.scrollY >= 120) {
-		 setNavbar(true);
-	 	}
-		else {
+		setNavbar(true);
+	} else {
 		setNavbar(false);
-		}
+	}
 	}
 	window.addEventListener('scroll', changeBackround);
 

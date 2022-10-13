@@ -8,7 +8,6 @@ import { TiHeartOutline, TiHeart } from 'react-icons/ti';
 import './GenreCard.css';
 
 function GenreCard({ genre }) {
-
     const [isFavorite, setIsFavorite] = useState(false)
 
     const handleClick = () => {
@@ -16,10 +15,10 @@ function GenreCard({ genre }) {
     }
 
     const onClick = () => {
-          handleClick();
+        handleClick();
         //   onAdd();       , onAdd 
-      }
-      
+    }
+
     return (
         <div className='GenreCard'>
             <div className='playlist-container'>
@@ -34,13 +33,13 @@ function GenreCard({ genre }) {
                         <p><em>{genre.quote}</em></p>
                         <span>{genre.quoteBy}</span>                
                     </div>
-                    </div>
-                    <button className = "favBtn" 
-                    onClick={onClick}> 
-                        {isFavorite ? <TiHeart />  : <TiHeartOutline/>}
-                    </button>
+                    </div>                    
                 </div>
             </div>
+            <button className = "favBtn" 
+                onClick={onClick}> 
+                {isFavorite ? <TiHeart />  : <TiHeartOutline/>}
+            </button>
         </div>
     )
 };

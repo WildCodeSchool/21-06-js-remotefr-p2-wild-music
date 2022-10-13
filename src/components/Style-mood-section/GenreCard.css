@@ -125,3 +125,10 @@
     box-shadow:0 0 10px rgba(0, 0, 0, 1);
     border-radius: 50%;
 }
+
+.favBtn {
+    margin-top: 10px;
+    color: red;
+    background: transparent;
+    border: none;
+}

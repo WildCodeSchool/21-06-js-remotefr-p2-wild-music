@@ -20,9 +20,9 @@ function PlaylistCard({style}) {
     }
 
     const onClick = () => {
-          handleClick();
-          addOnFav();
-      }
+        handleClick();
+        addOnFav();
+    }
     // onRemove()
     // const addToFavorite = (style) => {
     //     setFavorite([...favorite, style]);

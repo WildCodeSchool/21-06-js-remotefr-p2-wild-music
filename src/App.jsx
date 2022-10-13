@@ -16,7 +16,6 @@ function App() {
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {
-    
     setTimeout (() => {
       setLoader(false);
     }, 2500)
@@ -33,7 +32,7 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route exact path="/musics" component={GenreList}/>
           <Route exact path ="/musics/:genre" component={GenreDetails} />
-           <Route path= "/artist/:id" component={ArtistDetails} />
+          <Route path= "/artist/:id" component={ArtistDetails} />
           <Route path="/contact" component={Contact}/>
         </Switch>
         </Router> 
